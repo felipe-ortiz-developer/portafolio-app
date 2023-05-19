@@ -11,6 +11,7 @@ Esta es una aplicación de Portafolio con la finalidad de mostrar y probar conce
     - Animacion en movimiento
 
 ### Requisitos previos :
+    - Node 18.15.0
     - Angular 16.0.2
     
 <!-- ### Instalación:
