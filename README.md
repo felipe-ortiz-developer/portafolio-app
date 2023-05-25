@@ -1,5 +1,5 @@
 # Portafolio personal
-Esta es una aplicación de Portafolio con la finalidad de mostrar y probar conceptos desarrollados en Angular 16.0.2
+Esta es una aplicación de Portafolio con la finalidad de mostrar y probar conceptos desarrollados en Angular 16.0.2 de forma estatica para usar github pages
 
 ### Funcionalidades
     - Contacto por wzp: Dispondra de un boton que te llevara a wzp para hablar conmigo
@@ -10,7 +10,7 @@ Esta es una aplicación de Portafolio con la finalidad de mostrar y probar conce
     - Animacion
     - Animacion en movimiento
 
-### Requisitos previos :
+### Tecnologias :
     - Node 18.15.0
     - Angular 16.0.2
     
@@ -38,11 +38,11 @@ Esta es una aplicación de Portafolio con la finalidad de mostrar y probar conce
                     define('DB_NAME', 'sistema_votacion');
             3. Quitar la extencion ".example" el nombre del archivo -->
 
-### Contribuciones
+<!-- ### Contribuciones
 
 Si deseas contribuir a este proyecto, siéntete libre de hacer un fork del repositorio y enviar tus mejoras a través de solicitudes de extracción. Estaré encantado de revisarlas y fusionarlas si son apropiadas.
 Licencia
 
 Este proyecto se distribuye bajo la licencia MIT. Si utilizas este proyecto, por favor, menciona y enlaza a este repositorio.
 
-¡Gracias por utilizar nuestra aplicación de votación! Si tienes alguna pregunta o problema, no dudes en contactarnos.
+¡Gracias por utilizar nuestra aplicación de votación! Si tienes alguna pregunta o problema, no dudes en contactarnos. -->
