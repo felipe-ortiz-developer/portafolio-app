@@ -8,9 +8,9 @@ import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'resumen', component: AboutComponent },
+  { path: 'proyectos', component: ProjectsComponent },
+  { path: 'contacto', component: ContactComponent },
 ];
 
 @NgModule({
