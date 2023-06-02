@@ -5,18 +5,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
+import { ExperienseComponent } from './experiense/experiense.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { RouterModule } from '@angular/router';
+import { EducationComponent } from './education/education.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
+    ExperienseComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    EducationComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
