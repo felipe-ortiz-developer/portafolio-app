@@ -38,6 +38,28 @@
                 </div>
             </div>
         </footer>
+        <button onclick="scrollToTop()" id="btnScrollToTop">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+        <script>
+            // Función para mostrar u ocultar el botón dependiendo de la posición de desplazamiento
+            window.onscroll = function() {scrollFunction()};
+        
+            function scrollFunction() {
+                var btn = document.getElementById("btnScrollToTop");
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    btn.style.display = "block";
+                } else {
+                    btn.style.display = "none";
+                }
+            }
+        
+            // Función para desplazarse al principio de la página
+            function scrollToTop() {
+                document.body.scrollTop = 0; // Para navegadores Safari
+                document.documentElement.scrollTop = 0; // Para otros navegadores
+            }
+        </script>        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
