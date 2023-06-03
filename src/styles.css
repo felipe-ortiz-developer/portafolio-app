@@ -11604,7 +11604,7 @@ html {
   top: 4vw;
 }
 .profile .dots-1 svg {
-  fill: #fff;
+  fill: black;
 }
 .profile .dots-2 {
   position: absolute;
@@ -11622,7 +11622,7 @@ html {
   bottom: 6.05vw;
 }
 .profile .dots-3 svg {
-  fill: #fff;
+  fill: black;
 }
 .profile .dots-4 {
   position: absolute;
@@ -11733,4 +11733,27 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+}
+
+.logo-education {
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 50%;
+  margin-bottom: 7px;
+}
+
+#btnScrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  border: 2px solid white;
 }
