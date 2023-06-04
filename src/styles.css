@@ -11757,3 +11757,7 @@ html {
   cursor: pointer;
   border: 2px solid white;
 }
+
+.education {
+  text-align: center;
+}
