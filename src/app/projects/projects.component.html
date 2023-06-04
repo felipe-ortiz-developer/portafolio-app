@@ -9,13 +9,32 @@
               <!-- Project Card 1-->
               <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                   <div class="card-body p-0">
-                      <div class="d-flex align-items-center">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="assets/portafolio.png" class="d-block w-50" alt="Imagen 1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/sistema-votacion.png" class="d-block w-100" alt="Imagen 2">
+                          </div>
+                          <!-- Agrega más elementos de carousel-item según las imágenes que desees mostrar -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                      <!-- <div class="d-flex align-items-center">
                           <div class="p-5">
                               <h2 class="fw-bolder">Sistema de votación</h2>
                               <p>Tiene como objetivo proporcionar una solución confiable y conveniente para realizar procesos electorales en línea, mejorando la accesibilidad y la eficiencia del proceso de votación.</p>
                           </div>
                           <img class="img-fluid" src="assets/sistema-votacion.png" alt="..." />
-                      </div>
+                      </div> -->
                   </div>
               </div>
               <!-- Project Card 2-->
