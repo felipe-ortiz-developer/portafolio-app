@@ -6,86 +6,38 @@
         <div class="col-lg-11 col-xl-9 col-xxl-8">
             <!-- Education Section-->
             <section>
-                <!-- <h2 class="text-secondary fw-bolder mb-4">Education</h2> -->
-                <!-- Education Card 1-->
-                <div class="card shadow border-0 rounded-4 mb-5">
+                <!-- Education Card -->
+                <div *ngFor="let titulo of titulos" class="card shadow border-0 rounded-4 mb-5">
                     <div class="card-body p-5">
                         <div class="row mb-3">
                             <h5 class="card-title text-secondary fw-bolder text-center">
-                                Ingeniería en informática
+                                <!-- Analista programador computacional -->
+                                {{ titulo.nombre }}
                             </h5>
                         </div>
                         <div class="row align-items-center gx-5">
                             <div class="col text-center text-lg-start mb-4 mb-lg-0">
                                 <div class="bg-light p-4 rounded-4 education">
-                                    <!-- <div class="text-secondary fw-bolder mb-2">2015 - 2017</div> -->
-                                    <!-- <div class="text-secondary fw-bolder mb-2">Ingeniería en informática</div> -->
                                     <div class="mb-2">
-                                        <img src="assets/logo-duocuc.png" class="logo-education">
-                                        <div class="small fw-bolder">CFT DuocUC.</div>
-                                        <div class="small text-muted">Puente alto, Stg.</div>
+                                        <img src="{{titulo.img}}" class="logo-education">
+                                        <div class="small fw-bolder">{{titulo.institucion}}</div>
+                                        <div class="small text-muted">{{titulo.ubicacion}}</div>
                                     </div>
-                                    <!-- <div>
-                                        
-                                    </div> -->
-                                    <!-- <div class="fst-italic">
-                                        <div class="small text-muted">Master's</div>
-                                        <div class="small text-muted">Web Development</div>
-                                    </div> -->
                                 </div>
                             </div>
                             <div class="col-lg-8">
                                 <div>
-                                    Esta formación me ha permitido adquirir competencias en áreas fundamentales como la
-                                    programación, la arquitectura de software, la gestión de bases de datos, las redes
-                                    informáticas y la seguridad de la información. Además, tengo una comprensión
-                                    profunda de los principios y las metodologías de ingeniería que son esenciales para
-                                    el desarrollo y la implementación exitosa de soluciones tecnológicas.
+                                    {{titulo.descripcion}}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Education Card 2-->
-                <div class="card shadow border-0 rounded-4 mb-5">
-                    <div class="card-body p-5">
-                        <div class="row mb-3">
-                            <h5 class="card-title text-secondary fw-bolder text-center">
-                                Analista programador computacional
-                            </h5>
-                        </div>
-                        <div class="row align-items-center gx-5">
-                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                <div class="bg-light p-4 rounded-4 education">
-                                    <!-- <div class="text-secondary fw-bolder mb-2">2011 - 2015</div> -->
-                                    <!-- <div class="text-secondary fw-bolder mb-2">Analista programador computacional</div> -->
-                                    <div class="mb-2">
-                                        <img src="assets/logo-duocuc.png" class="logo-education">
-                                        <div class="small fw-bolder">CFT DuocUC.</div>
-                                        <div class="small text-muted">Puente alto, Stg.</div>
-                                    </div>
-                                    <!-- <div class="fst-italic">
-                                        <div class="small text-muted">Undergraduate</div>
-                                        <div class="small text-muted">Computer Science</div>
-                                    </div> -->
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div>
-                                    Esta formación me ha proporcionado una sólida base en lenguajes de programación,
-                                    estructuras de datos, algoritmos y metodologías de desarrollo de software. Conozco
-                                    las mejores prácticas para el diseño, implementación y mantenimiento de aplicaciones
-                                    informáticas, y tengo habilidades en la resolución de problemas y la depuración de
-                                    código.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
                 <!-- Cursos Card 2-->
                 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                     <div class="card-body p-0">
-                        <div class="h-100 px-5 pt-5 pb-3 rounded-3 text-center">
+                        <div class="h-100 px-5 pt-5 pb-3 rounded-3">
                             <div class="accordion accordion-flush" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
