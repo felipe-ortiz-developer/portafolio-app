@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  mensaje = "";
+  enviarMensaje(){ //Este metodo debe habilitar los botones de wzp y correo con el mensaje que se genero
 
+  }
 }
