@@ -18,7 +18,7 @@
                 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                     <div class="card-body p-0">
                         <div class="h-100 px-5 pt-5 pb-3 rounded-3">
-                            <h2 class="fw-bolder">Aplicaciones y sistemas web</h2>
+                            <h2 class="fw-bolder"><span class="text-gradient d-inline">Aplicaciones y sistemas web</span></h2>
                             <p>Son herramientas digitales que permiten a los usuarios interactuar con contenido y realizar tareas a través de un navegador web. Estas soluciones ofrecen comodidad, accesibilidad y eficiencia al tiempo que cumplen con diversos objetivos y necesidades en diferentes áreas.</p>
                         </div>
                         <div id="carouselExample1" class="border mb-5 mx-2 carousel slide" data-bs-ride="carousel">
@@ -65,7 +65,7 @@
                 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                     <div class="card-body p-0">
                         <div class="h-100 px-5 pt-5 pb-3 rounded-3">
-                            <h2 class="fw-bolder">Portafolios</h2>
+                            <h2 class="fw-bolder"><span class="text-gradient d-inline">Paginas estaticas</span></h2>
                             <p>Tiene como objetivo crear una presencia en línea profesional y atractiva para el titular,
                                 permitiéndole mostrar su trabajo de manera efectiva y atraer oportunidades laborales o
                                 colaboraciones. El portafolio web servirá como una herramienta esencial para presentar y
@@ -115,7 +115,7 @@
                 <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                     <div class="card-body p-0">
                         <div class="h-100 px-5 pt-5 pb-3 rounded-3">
-                            <h2 class="fw-bolder">Aplicaciones móviles</h2>
+                            <h2 class="fw-bolder"><span class="text-gradient d-inline">Aplicaciones móviles</span></h2>
                             <p>También conocidas como apps móviles, son programas informáticos diseñados específicamente para funcionar en dispositivos móviles, como teléfonos inteligentes y tabletas. Estas aplicaciones están desarrolladas para aprovechar las capacidades y características únicas de los dispositivos móviles, como la pantalla táctil, la cámara, el GPS y los sensores de movimiento.</p>
                         </div>
                         <div id="carouselExample3" class="border mb-5 mx-2 carousel slide" data-bs-ride="carousel">
@@ -133,7 +133,7 @@
                                         alt="DadosApp">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>DadosApp</h5>
-                                        <p>Some representative placeholder content for the first slide.</p>
+                                        <p>Aplicación que soluciona la necesidad de obtener valores aleatorios, perfecta para juegos de azar o entretenimiento.</p>
                                     </div>
                                 </div>
                                 <!-- <div class="carousel-item">
@@ -168,7 +168,11 @@
         <div class="text-center">
             <h2 class="display-4 fw-bolder mb-4">¡Construyamos algo juntos!</h2>
             <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" routerLink="/contacto"
-                routerLinkActive="active">
+                routerLinkActive="active" onclick="confetti({
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.6 },
+                });">
                 Contactame
             </a>
         </div>
