@@ -14,6 +14,67 @@ interface Titulo {
   styleUrls: ['./education.component.css']
 })
 export class EducationComponent {
+  certificados: any[];
+
+  constructor() {
+    this.certificados = [
+      { // 1
+        img: "assets/img/cursos/oracle-pl-sql.png",
+        alt: "Certificado de Curso de Oracle PL-SQL",
+        title: "Oracle PL-SQL",
+        description: "",
+      },
+      { // 2
+        img: "assets/img/cursos/wordpress.png",
+        alt: "Certificado de Curso de Wordpress",
+        title: "Wordpress",
+        description: "",
+      },
+      { // 3
+        img: "assets/img/cursos/Protege-tu-Negocio-Ciberseguridad-en-el-Teletrabajo.png",
+        alt: "Certificado de Curso de Protege tu Negocio Ciberseguridad en el Teletrabajo",
+        title: "Protege tu Negocio Ciberseguridad en el Teletrabajo",
+        description: "",
+      },
+      { // 4
+        img: "assets/img/cursos/Principios-basicos-de-internet-de-las-cosas.png",
+        alt: "Certificado de Curso de Principios basicos de internet de las cosas",
+        title: "Principios basicos de internet de las cosas",
+        description: "",
+      },
+      { // 5
+        img: "assets/img/cursos/Google-cloud-platform-fundamentals-core-infrastructure-en-español.png",
+        alt: "Certificado de Curso de Google cloud platform fundamentals core infrastructure en español",
+        title: "Google cloud platform fundamentals core infrastructure en español",
+        description: "",
+      },
+      { // 6
+        img: "assets/img/cursos/Digitaliza-paso-a-paso-tu-negocio-con-herramientas-de-Google.png",
+        alt: "Certificado de Curso de Digitaliza paso a paso tu negocio con herramientas de Google",
+        title: "Digitaliza paso a paso tu negocio con herramientas de Google",
+        description: "",
+      },
+      { // 7
+        img: "assets/img/cursos/Creacion-de-contenidos-digitales.png",
+        alt: "Certificado de Curso de Creacion de contenidos digitales",
+        title: "Creacion de contenidos digitales",
+        description: "",
+      },
+      { // 8
+        img: "assets/img/cursos/Ergonomía-y-Autocuidado-Frente-a-Pantallas-de-Computadores-ACHS.png",
+        alt: "Certificado de Curso de Ergonomía y Autocuidado Frente a Pantallas de Computadores",
+        title: "Ergonomía y Autocuidado Frente a Pantallas de Computadores",
+        description: "",
+      },
+      { // 9
+        img: "assets/img/cursos/Desarrollo-de-apps-moviles.png",
+        alt: "Certificado de Curso Desarrollo de apps moviles",
+        title: "Desarrollo de apps moviles",
+        description: "",
+      },
+    ]
+  }
+
   // Creación del array de titulos
   titulos: Titulo[] = [
     { 
