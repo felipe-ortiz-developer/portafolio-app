@@ -25,28 +25,20 @@
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                                     aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button> -->
-                            </div>
+                                    aria-label="Slide 3"></button>
+                            </div> 
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/img/projects/sistemas-web/votacion.PNG" class="d-block w-100"
-                                        alt="Sistema de votación">
+                                <div *ngFor="let web of proyectosWeb;let i=index" class="carousel-item" [ngClass]="{'active': i === 0}">
+                                    <img [src]="web.url" class="d-block w-100"
+                                        [alt]="web.alt">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Sistema de votación</h5>
-                                        <p>Formulario de validacion y administrador de votos.</p>
+                                        <h5>{{ web.title }}</h5>
+                                        <p>{{ web.description }}</p>
                                     </div>
                                 </div>
-                                <!-- <div class="carousel-item">
-                                    <img src="assets/img/projects/portafolios/portafolio-1.png" class="d-block w-100"
-                                        alt="Imagen 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/img/projects/portafolios/portafolio-2.png" class="d-block w-100"
-                                        alt="Imagen 1">
-                                </div> -->
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1"
                                 data-bs-slide="prev">
@@ -81,22 +73,14 @@
                                     aria-label="Slide 3"></button> -->
                             </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/img/projects/portafolios/fortiz.png" class="d-block w-100"
-                                        alt="Portafolio Felipe O.">
+                                <div *ngFor="let estatico of proyectosEstaticos;let i=index" class="carousel-item" [ngClass]="{'active': i === 0}">
+                                    <img [src]="estatico.url" class="d-block w-100"
+                                        [alt]="estatico.alt">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Portafolio Felipe O.</h5>
-                                        <p>Presentación de habilidades, logros y experiencias.</p>
+                                        <h5>{{ estatico.title }}</h5>
+                                        <p>{{ estatico.description }}</p>
                                     </div>
                                 </div>
-                                <!-- <div class="carousel-item">
-                                    <img src="assets/img/projects/portafolios/portafolio-1.png" class="d-block w-100"
-                                        alt="Imagen 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/img/projects/portafolios/portafolio-2.png" class="d-block w-100"
-                                        alt="Imagen 1">
-                                </div> -->
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
                                 data-bs-slide="prev">
@@ -122,28 +106,20 @@
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                                     aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                <!--<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                                     aria-label="Slide 3"></button> -->
                             </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/img/projects/aplicaciones-moviles/app1.png" class="d-block w-100"
-                                        alt="DadosApp">
+                                <div *ngFor="let movil of proyectosMoviles;let i=index" class="carousel-item" [ngClass]="{'active': i === 0}">
+                                    <img [src]="movil.url" class="d-block w-100"
+                                        [alt]="movil.alt">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>DadosApp</h5>
-                                        <p>Aplicación que soluciona la necesidad de obtener valores aleatorios, perfecta para juegos de azar o entretenimiento.</p>
+                                        <h5>{{ movil.title }}</h5>
+                                        <p>{{ movil.description }}</p>
                                     </div>
                                 </div>
-                                <!-- <div class="carousel-item">
-                                    <img src="assets/img/projects/portafolios/portafolio-1.png" class="d-block w-100"
-                                        alt="Imagen 1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/img/projects/portafolios/portafolio-2.png" class="d-block w-100"
-                                        alt="Imagen 1">
-                                </div> -->
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3"
                                 data-bs-slide="prev">
